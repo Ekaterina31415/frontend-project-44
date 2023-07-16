@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import userAnswerCheck from '../src/index.js';
+import { userAnswerCheck } from '../../src/index.js';
 
 console.log('Welcome to the Brain Games!');
 const name = readlineSync.question('May I have your name? ');

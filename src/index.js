@@ -29,4 +29,4 @@ const getRandomInt = (bottom, top) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export {userAnswerCheck, getRandomInt};
+export { userAnswerCheck, getRandomInt };
