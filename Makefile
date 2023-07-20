@@ -16,6 +16,9 @@ brain-gcd:
 brain-progression:
 	nodejs bin/games/brain-progression.js
 
+brain-prime:
+	nodejs bin/games/brain-prime.js
+
 publish:
 	npm publish --dry-run
 
