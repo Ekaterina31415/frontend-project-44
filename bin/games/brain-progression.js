@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import {userAnswerCheck, getRandomInt} from '../../src/index.js';
+import {userAnswerCheckNumber, getRandomInt} from '../../src/index.js';
 
 console.log('Welcome to the Brain Games!');
 const name = readlineSync.question('May I have your name? ');
@@ -28,4 +28,4 @@ for (const progression of progressions) {
   expressions.push(progression.join(' '));
 }
 
-userAnswerCheck(expressions, answers, name);
+userAnswerCheckNumber(expressions, answers, name);

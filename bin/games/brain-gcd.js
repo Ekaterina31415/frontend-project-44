@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { userAnswerCheck } from '../../src/index.js';
+import { userAnswerCheckNumber, getRandomInt } from '../../src/index.js';
 
 console.log('Welcome to the Brain Games!');
 const name = readlineSync.question('May I have your name? ');
@@ -18,10 +18,10 @@ const gcd = (a, b) => {
 }
 
 for (let i = 0; i < 3; i += 1) {
-  const num1 = Math.floor(Math.random() * 100) + 1;
-  const num2 = Math.floor(Math.random() * 100) + 1;
+  const num1 = getRandomInt(1, 100);
+  const num2 = getRandomInt(1, 100);
   expressions.push(`${num1} ${num2}`);
   answers.push(gcd(num1, num2));
 }
 
-userAnswerCheck(expressions, answers, name);
+userAnswerCheckNumber(expressions, answers, name);
