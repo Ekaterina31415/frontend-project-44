@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
-import {userAnswerCheck, getRandomInt} from '../../src/index.js';
+import { userAnswerCheckString } from '../../src/index.js';
+import { getRandomInt } from '../../src/utils.js';
 
 console.log('Welcome to the Brain Games!');
 const name = readlineSync.question('May I have your name? ');
@@ -25,4 +26,4 @@ for (let i = 0; i < 3; i += 1) {
   }
 }
 
-userAnswerCheck(expressions, answers, name);
+userAnswerCheckString(expressions, answers, name);

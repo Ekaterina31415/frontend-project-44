@@ -43,11 +43,4 @@ const userAnswerCheckNumber = (expressions, answers, name) => {
   }
 }
 
-const getRandomInt = (bottom, top) => {
-  const min = Math.ceil(bottom);
-  const max = Math.floor(top);
-
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-export { userAnswerCheckString, userAnswerCheckNumber, getRandomInt };
+export { userAnswerCheckString, userAnswerCheckNumber };
