@@ -1,3 +1,5 @@
+#!/usr/bin/env nodejs
+
 import readlineSync from 'readline-sync';
 import { userAnswerCheckNumber } from '../../src/index.js';
 import { getRandomInt } from '../../src/utils.js';
