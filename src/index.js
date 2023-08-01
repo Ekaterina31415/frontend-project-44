@@ -30,7 +30,7 @@ const userAnswerCheckNumber = (expressions, answers, name) => {
     }
     console.log(expressions[i]);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (Number(userAnswer) === Number(answers[i])) {
+    if (Number(userAnswer) === answers[i]) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answers[i]}'.`);
