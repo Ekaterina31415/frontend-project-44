@@ -7,7 +7,7 @@ const userAnswerCheckString = (expressions, answers, name) => {
     if (levelPass === false) {
       break;
     }
-    console.log(expressions[i]);
+    console.log(`Question: ${expressions[i]}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answers[i]) {
       console.log('Correct!');
@@ -28,7 +28,7 @@ const userAnswerCheckNumber = (expressions, answers, name) => {
     if (levelPass === false) {
       break;
     }
-    console.log(expressions[i]);
+    console.log(`Question: ${expressions[i]}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (Number(userAnswer) === answers[i]) {
       console.log('Correct!');

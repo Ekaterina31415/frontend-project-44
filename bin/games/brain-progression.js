@@ -13,7 +13,7 @@ const progressions = [];
 for (let i = 0; i < 3; i += 1) {
   let element = getRandomInt(0, 99);
   const diff = getRandomInt(1, 4);
-  const progression = ['Question:'];
+  const progression = [];
   for (let j = 0; j < 10; j += 1) {
     progression.push(element);
     element += diff;

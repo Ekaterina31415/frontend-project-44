@@ -17,7 +17,7 @@ for (let i = 0; i < 3; i += 1) {
   const randomIndex = getRandomInt(0, 2);
   const randomNum1 = getRandomInt(0, 10);
   const randomNum2 = getRandomInt(0, 10);
-  expressions.push(`Question: ${randomNum1} ${operations[randomIndex]} ${randomNum2}`);
+  expressions.push(`${randomNum1} ${operations[randomIndex]} ${randomNum2}`);
   let answer = '';
   switch (operations[randomIndex]) {
     case '+':

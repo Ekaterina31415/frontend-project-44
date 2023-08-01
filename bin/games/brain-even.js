@@ -14,7 +14,7 @@ const answers = [];
 
 for (let i = 0; i < 3; i += 1) {
   const randomNum = getRandomInt(1, 99);
-  expressions.push(`Question: ${randomNum}`);
+  expressions.push(`${randomNum}`);
   if (randomNum % 2 === 0) {
     answers.push('yes');
   } else {

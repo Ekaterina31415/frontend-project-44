@@ -26,7 +26,7 @@ const gcd = (a, b) => {
 for (let i = 0; i < 3; i += 1) {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
-  expressions.push(`Question: ${num1} ${num2}`);
+  expressions.push(`${num1} ${num2}`);
   answers.push(gcd(num1, num2));
 }
 
