@@ -10,17 +10,20 @@ const expressions = [];
 const answers = [];
 
 const gcd = (a, b) => {
-  if (b === 0) {
-    return a;
+  while ((a !== 0) && (b !== 0)) {
+    if (a > b) {
+      a %= b;
+    } else {
+      b %= a;
+    }
   }
-
-  return gcd(b, a % b);
+  return a + b;
 }
 
 for (let i = 0; i < 3; i += 1) {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
-  expressions.push(`${num1} ${num2}`);
+  expressions.push(`Question: ${num1} ${num2}`);
   answers.push(gcd(num1, num2));
 }
 
