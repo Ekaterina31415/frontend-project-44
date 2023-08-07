@@ -24,11 +24,11 @@ for (let i = 0; i < 3; i += 1) {
 const answers = [];
 const expressions = [];
 
-for (const progression of progressions) {
+for (let i = 0; i < 3; i += 1) {
   const index = getRandomInt(0, 9);
-  answers.push(progression[index]);
-  progression[index] = '..';
-  expressions.push(progression.join(' '));
+  answers.push(progressions[i][index]);
+  progressions[i][index] = '..';
+  expressions.push(progressions[i].join(' '));
 }
 
 userAnswerCheckNumber(expressions, answers, name);

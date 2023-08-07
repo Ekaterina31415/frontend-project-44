@@ -21,7 +21,7 @@ const gcd = (a, b) => {
     }
   }
   return a + b;
-}
+};
 
 for (let i = 0; i < 3; i += 1) {
   const num1 = getRandomInt(1, 100);
