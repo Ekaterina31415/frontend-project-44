@@ -13,14 +13,16 @@ const expressions = [];
 const answers = [];
 
 const gcd = (a, b) => {
-  while ((a !== 0) && (b !== 0)) {
-    if (a > b) {
-      a %= b;
+  let first = a;
+  let second = b;
+  while ((first !== 0) && (second !== 0)) {
+    if (first > second) {
+      first %= second;
     } else {
-      b %= a;
+      second %= first;
     }
   }
-  return a + b;
+  return first + second;
 };
 
 for (let i = 0; i < 3; i += 1) {
