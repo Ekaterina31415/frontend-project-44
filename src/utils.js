@@ -3,6 +3,6 @@ const getRandomInt = (bottom, top) => {
   const max = Math.floor(top);
 
   return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+};
 
-export { getRandomInt };
+export default getRandomInt;

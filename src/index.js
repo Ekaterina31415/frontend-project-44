@@ -20,7 +20,7 @@ const userAnswerCheckString = (expressions, answers, name) => {
   if (levelPass) {
     console.log(`Congratulations, ${name}!`);
   }
-}
+};
 
 const userAnswerCheckNumber = (expressions, answers, name) => {
   let levelPass = true;
@@ -41,6 +41,6 @@ const userAnswerCheckNumber = (expressions, answers, name) => {
   if (levelPass) {
     console.log(`Congratulations, ${name}!`);
   }
-}
+};
 
 export { userAnswerCheckString, userAnswerCheckNumber };
