@@ -1,7 +1,8 @@
 #!/usr/bin/env nodejs
 
-import brainGame from '../../src/games/brain-calc.js';
+import generateFunction from '../../src/games/brain-calc.js';
+import runGame from '../../src/index.js';
 
 const task = 'What is the result of the expression?';
 
-brainGame(task);
+runGame(generateFunction, task);
