@@ -1,7 +1,8 @@
 #!/usr/bin/env nodejs
 
-import brainGame from '../../src/games/brain-prime.js';
+import runGame from '../../src/index.js';
+import generateFunction from '../../src/games/brain-prime.js';
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-brainGame(task);
+runGame(generateFunction, task);
