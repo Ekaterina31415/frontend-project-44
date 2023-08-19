@@ -1,7 +1,8 @@
 #!/usr/bin/env nodejs
 
-import brainGame from '../../src/games/brain-progression.js';
+import generateFunction from '../../src/games/brain-progression.js';
+import runGame from '../../src/index.js';
 
 const task = 'What number is missing in the progression?';
 
-brainGame(task);
+runGame(generateFunction, task);
