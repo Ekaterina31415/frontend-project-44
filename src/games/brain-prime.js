@@ -1,7 +1,6 @@
 import getRandomInt from '../utils.js';
 
 const generateFunction = () => {
-
   const num = getRandomInt(5, 29);
   const expression = num;
   let isNumPrime = true;
@@ -12,9 +11,9 @@ const generateFunction = () => {
     }
   }
   if (isNumPrime === true) {
-    answer ='yes';
+    answer = 'yes';
   } else {
-    answer ='no';
+    answer = 'no';
   }
 
   const result = [];

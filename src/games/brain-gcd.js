@@ -14,7 +14,6 @@ const generateFunction = () => {
     return first + second;
   };
 
-
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
   const expression = `${num1} ${num2}`;
@@ -25,7 +24,6 @@ const generateFunction = () => {
   result.push(answer);
 
   return result;
-  
 };
 
 export default generateFunction;

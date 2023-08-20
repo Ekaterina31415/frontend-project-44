@@ -1,7 +1,6 @@
 import getRandomInt from '../utils.js';
 
 const brainGame = () => {
-
   let element = getRandomInt(0, 99);
   const diff = getRandomInt(1, 4);
   const numbers = [];

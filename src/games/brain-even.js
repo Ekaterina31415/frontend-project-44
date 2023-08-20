@@ -1,7 +1,6 @@
 import getRandomInt from '../utils.js';
 
 const generateFunction = () => {
-
   const expression = getRandomInt(1, 99);
   let answer = '';
 

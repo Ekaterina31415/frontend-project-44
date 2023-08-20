@@ -6,12 +6,12 @@ const runGame = (generateFunction, task) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(task);
-  let levelPass =  true;
+  let levelPass = true;
   for (let i = 0; i < 3; i += 1) {
     const generateResult = generateFunction();
     console.log(`Question: ${generateResult[0]}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (typeof(generateResult[1]) === 'number') {
+    if (typeof (generateResult[1]) === 'number') {
       if (Number(userAnswer) === generateResult[1]) {
         console.log('Correct!');
       } else {
@@ -20,7 +20,7 @@ const runGame = (generateFunction, task) => {
         levelPass = false;
         break;
       }
-    } else if (typeof(generateResult[1]) === 'string') {
+    } else if (typeof (generateResult[1]) === 'string') {
       if (userAnswer === generateResult[1]) {
         console.log('Correct!');
       } else {
@@ -31,10 +31,9 @@ const runGame = (generateFunction, task) => {
       }
     }
   }
-  
   if (levelPass === true) {
     console.log(`Congratulations, ${name}!`);
   }
-}
+};
 
 export default runGame;
