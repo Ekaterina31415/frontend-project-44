@@ -1,6 +1,6 @@
 import getRandomInt from '../utils.js';
 
-const brainGame = () => {
+const getNumbers = () => {
   let element = getRandomInt(0, 99);
   const diff = getRandomInt(1, 4);
   const numbers = [];
@@ -8,17 +8,16 @@ const brainGame = () => {
     numbers.push(element);
     element += diff;
   }
+  return numbers;
+};
 
+const brainGame = () => {
+  const numbers = getNumbers();
   const index = getRandomInt(0, 9);
   const answer = numbers[index];
   numbers[index] = '..';
   const progression = numbers.join(' ');
-
-  const result = [];
-  result.push(progression);
-  result.push(answer);
-
-  return result;
+  return [progression, answer];
 };
 
 export default brainGame;

@@ -1,8 +1,6 @@
 import getRandomInt from '../utils.js';
 
-const generateFunction = () => {
-  const num = getRandomInt(5, 29);
-  const expression = num;
+const isNumberPrime = (num) => {
   let isNumPrime = true;
   let answer = '';
   for (let j = 2; j < num / 2; j += 1) {
@@ -15,12 +13,13 @@ const generateFunction = () => {
   } else {
     answer = 'no';
   }
+  return answer;
+};
 
-  const result = [];
-  result.push(expression);
-  result.push(answer);
-
-  return result;
+const generateFunction = () => {
+  const expression = getRandomInt(5, 29);
+  const answer = isNumberPrime(expression);
+  return [expression, answer];
 };
 
 export default generateFunction;

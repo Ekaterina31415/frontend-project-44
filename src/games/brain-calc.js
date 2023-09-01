@@ -1,5 +1,24 @@
 import getRandomInt from '../utils.js';
 
+const calculate = (num1, num2, index) => {
+  const operations = ['+', '-', '*'];
+  let answer = '';
+  switch (operations[index]) {
+    case '+':
+      answer = num1 + num2;
+      break;
+    case '-':
+      answer = num1 - num2;
+      break;
+    case '*':
+      answer = num1 * num2;
+      break;
+    default:
+      break;
+  }
+  return answer;
+};
+
 const generateFunction = () => {
   const operations = ['+', '-', '*'];
   const result = [];
@@ -8,21 +27,7 @@ const generateFunction = () => {
   const randomNum2 = getRandomInt(0, 10);
   const expression = `${randomNum1} ${operations[randomIndex]} ${randomNum2}`;
   result.push(expression);
-  let answer = '';
-  switch (operations[randomIndex]) {
-    case '+':
-      answer = randomNum1 + randomNum2;
-      break;
-    case '-':
-      answer = randomNum1 - randomNum2;
-      break;
-    case '*':
-      answer = randomNum1 * randomNum2;
-      break;
-    default:
-      break;
-  }
-
+  const answer = calculate(randomNum1, randomNum2, randomIndex);
   result.push(answer);
 
   return result;
