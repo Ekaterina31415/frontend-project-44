@@ -7,13 +7,13 @@ const runGame = (generateFunction, task) => {
   console.log(`Hello, ${name}!`);
   console.log(task);
   for (let i = 0; i < 3; i += 1) {
-    const generateResult = generateFunction();
-    console.log(`Question: ${generateResult[0]}`);
+    const [expression, answer] = generateFunction();
+    console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (String(userAnswer) === String(generateResult[1])) {
+    if (String(userAnswer) === String(answer)) {
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${generateResult[1]}'.`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
