@@ -4,8 +4,13 @@
 
 Установка:
 	npm ci
+
 Запуск:
-  make brain-...
+  make brain-even
+  make brain-calc
+  make brain-gcd
+  make brain-progression
+  make brain-prime
   
 https://asciinema.org/a/emEFJAi5AHpXfX2mlXEGy3m7p -- brain-even
 https://asciinema.org/a/tcPsFvWQaYSMcoA23qNB9mHqB -- brain-calc
