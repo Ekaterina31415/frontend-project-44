@@ -6,7 +6,6 @@ const runGame = (generateFunction, task) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(task);
-  let levelPass = true;
   for (let i = 0; i < 3; i += 1) {
     const generateResult = generateFunction();
     console.log(`Question: ${generateResult[0]}`);
@@ -16,13 +15,10 @@ const runGame = (generateFunction, task) => {
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${generateResult[1]}'.`);
       console.log(`Let's try again, ${name}!`);
-      levelPass = false;
-      break;
+      return;
     }
   }
-  if (levelPass === true) {
-    console.log(`Congratulations, ${name}!`);
-  }
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default runGame;
