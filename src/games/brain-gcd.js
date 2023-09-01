@@ -1,5 +1,7 @@
 import getRandomInt from '../utils.js';
 
+const task = 'Find the greatest common divisor of given numbers.';
+
 const gcd = (a, b) => {
   let first = a;
   let second = b;
@@ -22,4 +24,4 @@ const generateFunction = () => {
   return [expression, answer];
 };
 
-export default generateFunction;
+export { generateFunction, task };

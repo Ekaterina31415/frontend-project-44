@@ -1,5 +1,7 @@
 import getRandomInt from '../utils.js';
 
+const task = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 const getAnswer = (expression) => {
   let answer = '';
   if (expression % 2 === 0) {
@@ -16,4 +18,4 @@ const generateFunction = () => {
   return [expression, answer];
 };
 
-export default generateFunction;
+export { generateFunction, task };

@@ -1,5 +1,7 @@
 import getRandomInt from '../utils.js';
 
+const task = 'What is the result of the expression?';
+
 const calculate = (num1, num2, index) => {
   const operations = ['+', '-', '*'];
   let answer = '';
@@ -33,4 +35,4 @@ const generateFunction = () => {
   return result;
 };
 
-export default generateFunction;
+export { generateFunction, task };

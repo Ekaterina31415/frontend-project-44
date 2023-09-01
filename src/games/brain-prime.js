@@ -1,5 +1,7 @@
 import getRandomInt from '../utils.js';
 
+const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const isNumberPrime = (num) => {
   let isNumPrime = true;
   let answer = '';
@@ -22,4 +24,4 @@ const generateFunction = () => {
   return [expression, answer];
 };
 
-export default generateFunction;
+export { generateFunction, task };

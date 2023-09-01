@@ -1,5 +1,7 @@
 import getRandomInt from '../utils.js';
 
+const task = 'What number is missing in the progression?';
+
 const getNumbers = () => {
   let element = getRandomInt(0, 99);
   const diff = getRandomInt(1, 4);
@@ -11,7 +13,7 @@ const getNumbers = () => {
   return numbers;
 };
 
-const brainGame = () => {
+const generateFunction = () => {
   const numbers = getNumbers();
   const index = getRandomInt(0, 9);
   const answer = numbers[index];
@@ -20,4 +22,4 @@ const brainGame = () => {
   return [progression, answer];
 };
 
-export default brainGame;
+export { generateFunction, task };
