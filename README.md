@@ -4,19 +4,25 @@
 
 Привет! Это мой первый проект на Хекслет :)
 
-Здесь собраны захватывающие игры! Скорее приступай!
+Здесь собраны захватывающие игры, cкорее приступай!
 
 Установка:
+
 npm ci
 
 Запуск:
+
 make brain-even
+
 make brain-calc
+
 make brain-gcd
+
 make brain-progression
+
 make brain-prime
   
-https://asciinema.org/a/emEFJAi5AHpXfX2mlXEGy3m7p -- brain-even
+[![asciicast](https://asciinema.org/a/emEFJAi5AHpXfX2mlXEGy3m7p.svg)](https://asciinema.org/a/emEFJAi5AHpXfX2mlXEGy3m7p) -- brain-even
 https://asciinema.org/a/tcPsFvWQaYSMcoA23qNB9mHqB -- brain-calc
 https://asciinema.org/a/y28TfLUbvatL0DZlCq9hr4hT4 -- brain-gcd
 https://asciinema.org/a/nK95JXcIBKMpTB3br2OnpJaWM -- brain-progression
