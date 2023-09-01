@@ -6,11 +6,11 @@
 
 Здесь собраны захватывающие игры, cкорее приступай!
 
-Установка:
+### Установка:
 
 npm ci
 
-Запуск:
+### Запуск:
 
 make brain-even
 
@@ -22,8 +22,13 @@ make brain-progression
 
 make brain-prime
   
-[![asciicast](https://asciinema.org/a/emEFJAi5AHpXfX2mlXEGy3m7p.svg)](https://asciinema.org/a/emEFJAi5AHpXfX2mlXEGy3m7p) -- brain-even
-https://asciinema.org/a/tcPsFvWQaYSMcoA23qNB9mHqB -- brain-calc
-https://asciinema.org/a/y28TfLUbvatL0DZlCq9hr4hT4 -- brain-gcd
-https://asciinema.org/a/nK95JXcIBKMpTB3br2OnpJaWM -- brain-progression
-https://asciinema.org/a/AifDCtiXAH1KGMRNnwDbNCzAd -- brain-prime
+[![asciicast](https://asciinema.org/a/emEFJAi5AHpXfX2mlXEGy3m7p.svg)](https://asciinema.org/a/emEFJAi5AHpXfX2mlXEGy3m7p)
+ -- brain-even
+[![asciicast](https://asciinema.org/a/tcPsFvWQaYSMcoA23qNB9mHqB.svg)](https://asciinema.org/a/tcPsFvWQaYSMcoA23qNB9mHqB)
+ -- brain-calc
+[![asciicast](https://asciinema.org/a/y28TfLUbvatL0DZlCq9hr4hT4.svg)](https://asciinema.org/a/y28TfLUbvatL0DZlCq9hr4hT4)
+ -- brain-gcd
+[![asciicast](https://asciinema.org/a/nK95JXcIBKMpTB3br2OnpJaWM.svg)](https://asciinema.org/a/nK95JXcIBKMpTB3br2OnpJaWM)
+ -- brain-progression
+[![asciicast](https://asciinema.org/a/AifDCtiXAH1KGMRNnwDbNCzAd.svg)](https://asciinema.org/a/AifDCtiXAH1KGMRNnwDbNCzAd)
+ -- brain-prime
